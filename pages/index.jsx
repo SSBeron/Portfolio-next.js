@@ -8,6 +8,7 @@ import REstate from '../public/REstate.jpg';
 import conv from '../public/conv.jpg';
 import leftImage from '../public/leftImage.png';
 import rightImage from '../public/rightImage.png';
+import Hand from '../public/3DHand.png';
 import{useState} from "react";
 
 
@@ -33,11 +34,11 @@ export default function Home() {
                 My Resume
               </a>
             </li>
-
             </ul>
           </nav>
+
           <div className="text-center p-8">
-            <h2 className="text-5xl py-2 text-green-700 font-medium md:text-6xl">Sultan Sagatov</h2>
+            <h2 className="text-5xl py-2 text-green-700 font-medium md:text-6xl"><Image src={Hand} className="w-24 animate-waving-hand"/> Hi! My name is Sultan</h2>
             <h3 className="text-2xl py-2 md:text-3xl">Fullstack Web Developer</h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white">
              Welcome to my web developer portfolio! I'm an aspiring web developer with a passion for learning and staying updated with the latest technologies.<br /><br />
@@ -117,7 +118,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <footer className="bg-gray-800 py-4 text-white text-center">
+        <footer className="bg-gray-800 py-4 text-white text-center rounded-xl">
           <p>Created by Sultan Sagatov</p>
           <p>&copy; 2023 All rights reserved*</p>
         </footer>
