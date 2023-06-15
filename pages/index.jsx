@@ -28,7 +28,12 @@ export default function Home() {
             <h1 className="text-xl font-comfortaa">SSBeron</h1>
             <ul className="flex items-center">
               <li><BsFillMoonStarsFill onClick={()=> setDarkMode(!darkMode)} className="cursor-pointer" /></li>
-              <li><a className="bg-gradient-to-r from-green-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 animate-pulse" href="#">Resume</a></li>
+              <li>
+              <a className="bg-gradient-to-r from-green-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 animate-pulse" href="https://drive.google.com/file/d/1cciJyabKttq-6zw0K6QLZQbdMC-x-Q5G/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                My Resume
+              </a>
+            </li>
+
             </ul>
           </nav>
           <div className="text-center p-8">
@@ -82,7 +87,7 @@ export default function Home() {
           </div>
           <div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark: bg-white">
-            <a href="https://real-estate-gda2.onrender.com" target="_blank" className="image-wrapper">
+            <a href="https://local-media.onrender.com" target="_blank" className="image-wrapper">
               <Image src={TWD} className="w-screen rounded-xl transition-shadow" />
             </a>
               <h4 className="text-xl py-5 text-teal-600">Web Development tools I used in TWD project</h4>
@@ -91,7 +96,7 @@ export default function Home() {
               <p className="text-md py-1 text-gray-800">JavaScript</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark: bg-white">
-            <a href="https://local-media.onrender.com" className="image-wrapper">
+            <a href="https://real-estate-gda2.onrender.com" target="_blank" className="image-wrapper">
               <Image src={REstate} className="w-screen rounded-xl" />
             </a>
               <h4 className="text-xl py-5 text-teal-600">Web Development tools I used in "Home sweet home" Real Estate selling project</h4>
@@ -102,15 +107,13 @@ export default function Home() {
               <p className="text-md py-1 text-gray-800">Express.js</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark: bg-white">
-            <a href="https://google-converter.onrender.com" className="image-wrapper">
+            <a href="https://google-converter.onrender.com" target="_blank" className="image-wrapper">
               <Image src={conv} className="w-screen rounded-xl" />
             </a>
               <h4 className="text-xl py-5 text-teal-600">Web Development tools I used in Google&nbsp;Converter&nbsp;clone project</h4>
               <p className="text-md py-1 text-gray-800">HTML</p>
               <p className="text-md py-1 text-gray-800">CSS</p>
               <p className="text-md py-1 text-gray-800">JavaScript</p>
-              <p className="text-md py-1 text-gray-800">MongoDB</p>
-              <p className="text-md py-1 text-gray-800">React</p>
             </div>
           </div>
         </section>

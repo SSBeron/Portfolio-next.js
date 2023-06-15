@@ -70,3 +70,7 @@ a {
       animation: ping-animation 1s ease-in-out forwards;
       opacity: 1;
     }
+
+    a{
+      color: green;
+    }
