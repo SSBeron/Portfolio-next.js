@@ -26,7 +26,7 @@ export default function Home() {
             <h1 className="text-xl font-comfortaa">SSBeron</h1>
             <ul className="flex items-center">
               <li><BsFillMoonStarsFill onClick={()=> setDarkMode(!darkMode)} className="cursor-pointer" /></li>
-              <li><a className="bg-gradient-to-r from-green-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href="#">Resume</a></li>
+              <li><a className="bg-gradient-to-r from-green-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 animate-pulse" href="#">Resume</a></li>
             </ul>
           </nav>
           <div className="text-center p-8">
@@ -49,31 +49,45 @@ export default function Home() {
             <AiFillYoutube className="text-gray-600"/>
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 my-5 overflow-hidden md:h-96 md:w-96">
-            <Image src={sultan} layout="fill" objectFit="cover" />
+            <Image src={sultan} />
           </div>
         </section>
         <section>
           <div>
             <h3 className="text-3xl py-1">My recent projects</h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-white">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium mollitia culpa ut rerum, nostrum dolorum rem sunt porro possimus dignissimos doloremque, corrupti voluptate eligendi tempore modi. Quos perspiciatis temporibus eius?
+              Real Estate Marketplace Website
+              Designed and developed a user-friendly frontend using EJS, Express.js, and CSS.
+              Implemented features for browsing real estate properties.
+              URL: <a href="https://real-estate-gda2.onrender.com">https://real-estate-gda2.onrender.com</a>
             </p>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-white">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium mollitia culpa ut rerum, nostrum dolorum rem sunt porro possimus dignissimos doloremque, corrupti voluptate eligendi tempore modi. Quos perspiciatis temporibus eius?
+              The Walking Dead TV series Frontend Website
+              Created a Front-end using CSS, HTML, and JavaScript.
+              Developed interactive elements and optimized performance.
+              URL: <a href="https://local-media.onrender.com">https://local-media.onrender.com</a>
+           </p>
+            <p className="text-md py-5 leading-8 text-gray-800 dark:text-white">
+              Google Converter Clone
+              Built a unit converter tool using JavaScript.
+              Ensured accuracy and responsiveness.
+              URL: <a href="https://google-converter.onrender.com">https://google-converter.onrender.com</a>
             </p>
           </div>
           <div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark: bg-white">
-              <Image />
-            <Image src={TWD} className="w-screen"></Image>
+            <a href="https://real-estate-gda2.onrender.com" target="_blank" className="image-wrapper">
+              <Image src={TWD} className="w-screen rounded-xl transition-shadow" />
+            </a>
               <h4 className="text-xl py-5 text-teal-600">Web Development tools I used in TWD project</h4>
               <p className="text-md py-1 text-gray-800">HTML</p>
               <p className="text-md py-1 text-gray-800">CSS</p>
               <p className="text-md py-1 text-gray-800">JavaScript</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark: bg-white">
-              <Image />
-            <Image src={REstate} className="w-screen"></Image>
+            <a href="https://local-media.onrender.com" className="image-wrapper">
+              <Image src={REstate} className="w-screen rounded-xl" />
+            </a>
               <h4 className="text-xl py-5 text-teal-600">Web Development tools I used in "Home sweet home" Real Estate selling project</h4>
               <p className="text-md py-1 text-gray-800">HTML</p>
               <p className="text-md py-1 text-gray-800">CSS</p>
@@ -82,8 +96,9 @@ export default function Home() {
               <p className="text-md py-1 text-gray-800">Express.js</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark: bg-white">
-              <Image />
-            <Image src={conv} className="w-screen"></Image>
+            <a href="https://google-converter.onrender.com" className="image-wrapper">
+              <Image src={conv} className="w-screen rounded-xl" />
+            </a>
               <h4 className="text-xl py-5 text-teal-600">Web Development tools I used in Google&nbsp;Converter&nbsp;clone project</h4>
               <p className="text-md py-1 text-gray-800">HTML</p>
               <p className="text-md py-1 text-gray-800">CSS</p>
