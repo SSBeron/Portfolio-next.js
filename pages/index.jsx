@@ -117,10 +117,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <footer>
-          <div className="py-10">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta magnam veniam ex, aperiam dolore est hic. Ratione rerum laboriosam distinctio aut, nihil minima accusamus molestias officiis iusto voluptate repellendus eos.</p>
-          </div>
+        <footer className="bg-gray-800 py-4 text-white text-center">
+          <p>Created by Sultan Sagatov</p>
+          <p>&copy; 2023 All rights reserved*</p>
         </footer>
       </main>
     </div>
