@@ -1,7 +1,11 @@
 import Head from "next/head";
 import {BsFillMoonStarsFill} from 'react-icons/bs'
-import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube} from 'react-icons/ai'
+import {AiFillInstagram, AiFillLinkedin, AiFillYoutube} from 'react-icons/ai'
 import Image from "next/image";
+import sultan from '../public/MyPhoto.png';
+import TWD from '../public/TWD.jpg';
+import REstate from '../public/REstate.jpg';
+import conv from '../public/conv.jpg';
 import{useState} from "react";
 
 
@@ -22,28 +26,35 @@ export default function Home() {
             <h1 className="text-xl font-comfortaa">SSBeron</h1>
             <ul className="flex items-center">
               <li><BsFillMoonStarsFill onClick={()=> setDarkMode(!darkMode)} className="cursor-pointer" /></li>
-              <li><a className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href="#">Resume</a></li>
+              <li><a className="bg-gradient-to-r from-green-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8" href="#">Resume</a></li>
             </ul>
           </nav>
-          <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">Sultan Sagatov</h2>
-            <h3 className="text-2xl py-2 md:text-3xl">Fullstack Developer</h3>
+          <div className="text-center p-8">
+            <h2 className="text-5xl py-2 text-green-700 font-medium md:text-6xl">Sultan Sagatov</h2>
+            <h3 className="text-2xl py-2 md:text-3xl">Fullstack Web Developer</h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium mollitia culpa ut rerum, nostrum dolorum rem sunt porro possimus dignissimos doloremque, corrupti voluptate eligendi tempore modi. Quos perspiciatis temporibus eius?
+             Welcome to my web developer portfolio! I'm an aspiring web developer with a passion for learning and staying updated with the latest technologies.<br /><br />
+            I specialize in HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB, and have recently added Next.js to my skill set. This portfolio itself is built using Next.js, showcasing my adaptability and eagerness to embrace new tools.<br /><br />
+            I strive to create engaging and user-friendly websites, driven by a solid understanding of web development principles. Collaboration, communication, and continuous improvement are key in achieving project goals.<br /><br />
+            Explore my portfolio to see my work with Next.js and witness my dedication to creating impactful web solutions. Exciting opportunities lie ahead as I continue to develop my skills and contribute to the web development field.<br /><br />
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-            <AiFillTwitterCircle/>
-            <AiFillLinkedin />
-            <AiFillYoutube />
+            <a href="https://www.instagram.com/ss.beron/" target="_blank">
+              <AiFillInstagram className="text-gray-600" />
+            </a>
+            <a href="https://www.linkedin.com/in/sultan-sagatov-7bb4a6228/" target="_blank">
+              <AiFillLinkedin className="text-gray-600" />
+            </a>
+            <AiFillYoutube className="text-gray-600"/>
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 my-5 overflow-hidden md:h-96 md:w-96">
-            {/* <Image src={} layout="fill" objectFit="cover"> */}
+            <Image src={sultan} layout="fill" objectFit="cover" />
           </div>
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1">Services I offer</h3>
+            <h3 className="text-3xl py-1">My recent projects</h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-white">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium mollitia culpa ut rerum, nostrum dolorum rem sunt porro possimus dignissimos doloremque, corrupti voluptate eligendi tempore modi. Quos perspiciatis temporibus eius?
             </p>
@@ -54,25 +65,26 @@ export default function Home() {
           <div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark: bg-white">
               <Image />
-              <h4 className="text-xl py-5 text-teal-600">Web Development skills I use</h4>
+            <Image src={TWD} className="w-screen"></Image>
+              <h4 className="text-xl py-5 text-teal-600">Web Development tools I used in TWD project</h4>
               <p className="text-md py-1 text-gray-800">HTML</p>
               <p className="text-md py-1 text-gray-800">CSS</p>
               <p className="text-md py-1 text-gray-800">JavaScript</p>
-              <p className="text-md py-1 text-gray-800">MongoDB</p>
-              <p className="text-md py-1 text-gray-800">React</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark: bg-white">
               <Image />
-              <h4 className="text-xl py-5 text-teal-600">Web Development skills I use</h4>
+            <Image src={REstate} className="w-screen"></Image>
+              <h4 className="text-xl py-5 text-teal-600">Web Development tools I used in "Home sweet home" Real Estate selling project</h4>
               <p className="text-md py-1 text-gray-800">HTML</p>
               <p className="text-md py-1 text-gray-800">CSS</p>
               <p className="text-md py-1 text-gray-800">JavaScript</p>
-              <p className="text-md py-1 text-gray-800">MongoDB</p>
-              <p className="text-md py-1 text-gray-800">React</p>
+              <p className="text-md py-1 text-gray-800">Node.js</p>
+              <p className="text-md py-1 text-gray-800">Express.js</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark: bg-white">
               <Image />
-              <h4 className="text-xl py-5 text-teal-600">Web Development skills I use</h4>
+            <Image src={conv} className="w-screen"></Image>
+              <h4 className="text-xl py-5 text-teal-600">Web Development tools I used in Google&nbsp;Converter&nbsp;clone project</h4>
               <p className="text-md py-1 text-gray-800">HTML</p>
               <p className="text-md py-1 text-gray-800">CSS</p>
               <p className="text-md py-1 text-gray-800">JavaScript</p>
