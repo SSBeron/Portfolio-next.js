@@ -27,3 +27,46 @@ a {
    transform: scale(1.02);
  }
 
+/* photo styles */
+
+    .photo-wrapper {
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .photo-wrapper img {
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .photo-wrapper:hover img {
+      transform: scale(1.1);
+    }
+  
+    @keyframes ping-animation {
+      0% {
+        transform: scale(1);
+      }
+  
+      50% {
+        transform: scale(1.2);
+      }
+  
+      100% {
+        transform: scale(1);
+      }
+    }
+  
+    .ping-animation {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: ping-animation 1s ease-in-out;
+      pointer-events: none;
+      opacity: 0;
+    }
+  
+    .photo-wrapper:hover .ping-animation {
+      animation: ping-animation 1s ease-in-out forwards;
+      opacity: 1;
+    }

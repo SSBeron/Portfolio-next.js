@@ -6,6 +6,8 @@ import sultan from '../public/MyPhoto.png';
 import TWD from '../public/TWD.jpg';
 import REstate from '../public/REstate.jpg';
 import conv from '../public/conv.jpg';
+import leftImage from '../public/leftImage.png';
+import rightImage from '../public/rightImage.png';
 import{useState} from "react";
 
 
@@ -46,11 +48,15 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/sultan-sagatov-7bb4a6228/" target="_blank">
               <AiFillLinkedin className="text-gray-600" />
             </a>
-            <AiFillYoutube className="text-gray-600"/>
+            <a href="https://www.youtube.com" target="_blank">
+              <AiFillYoutube className="text-gray-600"/>
+            </a>
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 my-5 overflow-hidden md:h-96 md:w-96">
-            <Image src={sultan} />
-          </div>
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 my-5 overflow-hidden md:h-96 md:w-96 photo-wrapper">
+          <Image src={leftImage} className="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-full rotate-3 hover:translate-x-0 hover:rotate-0 transition-all duration-500" />
+          <Image src={rightImage} className="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-full rotate-3 hover:translate-x-0 hover:rotate-0 transition-all duration-500" />
+          <Image src={sultan} className="relative z-10" />
+        </div>
         </section>
         <section>
           <div>
