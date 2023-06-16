@@ -39,7 +39,7 @@ export default function Home() {
           </nav>
 
           <div className="text-center p-8">
-            <h2 className="text-5xl py-5 text-green-700 font-medium md:text-6xl"><Image src={Hand} className="w-24 animate-waving-hand"/> Hi! My&nbsp;name&nbsp;is Sultan</h2>
+            <h2 className="text-5xl py-2 leading-10 text-green-700 font-medium md:text-6xl"><Image src={Hand} className="w-24 animate-waving-hand"/> Hi! My&nbsp;name&nbsp;is Sultan</h2>
             <h3 className="text-2xl py-2 md:text-3xl">Fullstack Web Developer</h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-white">
              Welcome to my web developer portfolio! I'm an aspiring web developer with a passion for learning and staying updated with the latest technologies.<br /><br />
